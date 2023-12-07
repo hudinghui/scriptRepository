@@ -20,7 +20,10 @@ sudo yum update -y
 sudo yum install curl -y
 
 # 使用官方安装脚本自动安装v2ray
-bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+#bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+#先下载文件，在执行
+wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+bash install-release.sh
 
 # 配置v2ray
 
